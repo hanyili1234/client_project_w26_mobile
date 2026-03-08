@@ -1,0 +1,170 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background:white;
+  padding:1rem;
+  color: #00274C;
+  z-index: 1000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #FFCB05;
+}
+
+header {
+  background-color: #00274C;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+.logo-brand {
+  display:flex;
+  align-items: center;
+  justify-content: left;
+  gap: 15px;
+}
+
+.logo-brand img {
+  max-width: 60px;
+  height: auto;
+  margin: 0;
+}
+
+.brand-text {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.2;
+  max-width: 260px;
+  border-left: 2px solid #FFCB05;
+  padding-left: 16px;
+}
+
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+nav a:focus :active {
+  background-color:white;
+  color: #00274C;
+  outline: 3px solid #FFCB05;
+}
+
+nav a.active {
+  color:white;
+  text-decoration: underline; 
+}
+
+h1{
+    font-size:2rem;
+    padding:0.8rem;
+
+}
+
+h2{
+  font-size:1.2rem;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.homepage{
+  display:block;
+}
+
+.homepage img{
+  max-width:80%;
+}
+
+.homepage section {
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  background: white;
+  padding: 2rem;
+  border-right: 5px solid #FFCB05;
+  box-shadow: 0 2px 5px lightgrey;
+  border-radius: 16px;
+}
+
+
+main ul, main ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+main li {
+  margin-bottom: 1rem;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+
+
+footer {
+  background-color: #00274C;
+  color: white;
+  text-align: center;
+  padding: 5rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: #FFCB05;
+}
